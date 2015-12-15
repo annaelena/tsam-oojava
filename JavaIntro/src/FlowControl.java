@@ -30,6 +30,24 @@ public class FlowControl {
 			System.out.println(i);
 			i++;
 		}
+		// do while
+		
+		System.out.println("do while: from 0 to 10");
+		i = 0;
+		do {
+			System.out.println(i);
+			i++;
+		}while(i < 10);
+		
+		
+		// while
+		
+		System.out.println("while: 20");
+		i = 20;
+		while( i < 10) {
+			System.out.println(i);
+			i++;
+		}
 		
 		//do while
 		System.out.println("do while: 20");
@@ -46,6 +64,6 @@ public class FlowControl {
 			System.out.println(index);
 		}
 		
-		
+	}	
 		
 }
