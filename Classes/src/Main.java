@@ -21,7 +21,17 @@ public class Main {
 		int lucaAvgMarks = luca.marksAverage();
 		System.out.println("Luca marks average" + lucaAvgMarks);
 		
-		Student giovanni = new Student(" Giovanni", "Viola");
+		System.out.println("Marco marks average: " + marco.marksAverage());
+		
+		//Constructor
+		//Student giovanni = new Student(" Giovanni", "Viola");
+		
+		
+		Statistics stats = new Statistics();
+		int avg = stats.studentsAverageMarks(new Student[]{luca, marco});
+		System.out.println("Average:" + avg);
+		
+		
 	
 	}		
 }

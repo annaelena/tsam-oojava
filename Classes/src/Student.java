@@ -16,7 +16,7 @@ public class Student {
 	
 	Student(String n, String surname) {
 		name = n; //univoke
-		this.surname = surname;
+		this.surname = surname; // this == oggetto chiamante
 	}
 	
 	int marksAverage() {
