@@ -3,10 +3,11 @@
 import java.util.Scanner;
 
 public class IMC {
+	private static Scanner tastiera;
 	
 	public static void main(String[] args) {
 		
-		Scanner tastiera = new Scanner(System.in);
+		tastiera = new Scanner(System.in);
 		int kilogrammi, metri, centimetri;
 		double altezza, massa, IMC;
 		
