@@ -18,7 +18,7 @@ public class SviluppatoreTest {
 		s.setAnzianita(1);
 		s.setStipendio(800);
 		
-		assertEquals(786, s.calcolaStipendio());
+		assertEquals(768, s.calcolaStipendio());
 		
 		
 	}

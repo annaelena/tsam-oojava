@@ -60,7 +60,8 @@ public class Test {
  		System.out.println(caract); 
  	} 
  	 
- 	static void stampaAuto(Car x) {  		System.out.println("Modello: " + x.model); 
+ 	static void stampaAuto(Car x) {  	
+ 		System.out.println("Modello: " + x.model); 
  		Engine e = x.motore; 
  		System.out.println(e.cilindrata + " cc"); 
  		System.out.println("carburatore: "  

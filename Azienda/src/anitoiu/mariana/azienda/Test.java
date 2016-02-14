@@ -12,6 +12,7 @@ public class Test {
 		String strStipendio = args[0];
 		int stipendio =Integer.parseInt(strStipendio); 
 		
+		
 		Azienda microapple= new Azienda();
 		microapple.setPiva("00000000001");
 		microapple.setRagioneSociale("MicroApple snc");
@@ -24,6 +25,8 @@ public class Test {
 		bill.setCognome("Gates");
 		bill.setNome("Bill");
 		bill.setContratto(contratto);
+		bill.stipendio();
+		
 		
 		Dipendente steve = new Dipendente();
 		steve.setCognome("Jobs");

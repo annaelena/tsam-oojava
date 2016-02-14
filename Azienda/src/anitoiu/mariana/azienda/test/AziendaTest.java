@@ -3,6 +3,7 @@ package anitoiu.mariana.azienda.test;
 import static org.junit.Assert.*;
 
 
+
 import org.junit.Test;
 
 import anitoiu.mariana.azienda.Azienda;
@@ -25,6 +26,7 @@ public class AziendaTest {
 		bill.setCognome("Gates");
 		bill.setNome("Bill");
 		bill.setContratto(contratto);
+	
 
 		Dipendente steve = new Dipendente();
 		steve.setCognome("Jobs");

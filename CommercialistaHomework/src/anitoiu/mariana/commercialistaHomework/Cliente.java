@@ -1,50 +1,44 @@
 package anitoiu.mariana.commercialistaHomework;
 
-public class Cliente {
+public abstract  class Cliente extends Persona{
 	
-	private String nome;
-	private String cognome;
-	private String CF;
-	private int Parcella;
-	//private Commercialista commercialista;
 	
-	public int calcolaParcella(){
-		return Parcella;
+	private String cf;
+	
+	public Cliente(){
+		
+	}
+	
+	public Cliente (String nome, String cognome, String cf) {
+		super(nome, cognome);
+		this.cf = cf;
 	}
 
+	public String getCf() {
+		return cf;
+	}
+
+	public void setCf(String cf) {
+		this.cf = cf;
+	}
+	
+	// l'implementazione del metodo calcolaParcella
+		// è funzionale per l'uso come classe base per le implementazioni
+		// dipendente, libero prof..
+		/*
+		public int calcolaParcella() {
+			return 0; // 
+		}
+		*/
+		
+		// (ABSTRACT)
+		// il metodo è astratto === dichiaro il metodo ma non
+		// lo implementato (definisco)
+		// nota: se una classe contiene un metodo astratto => 
+		// la classe deve essere definita come astratta
+		//public abstract int calcolaParcella();
 	
 
-	public String getNome() {
-		return nome;
-	}
-
-	public int getParcella() {
-		return Parcella;
-	}
-
-	public void setParcella(int parcella) {
-		Parcella = parcella;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getCognome() {
-		return cognome;
-	}
-
-	public void setCognome(String cognome) {
-		this.cognome = cognome;
-	}
-
-	public String getCF() {
-		return CF;
-	}
-
-	public void setCF(String cF) {
-		CF = cF;
-	}
 	
 	
 

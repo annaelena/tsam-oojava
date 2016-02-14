@@ -15,7 +15,7 @@ public class ManagerTest {
 		 	d.setNome("Super"); 
 			d.setCognome("Bianchi"); 
 		 		 
-		 	assertEquals("Super, Bianchi", d.bigliettoVisita()); 
+		 	assertEquals("Super,Bianchi", d.bigliettoVisita()); 
 		 		 
 		 	// metodi specifici della classe Dipendente 
 		 	d.setStipendio(1000); 
@@ -38,7 +38,7 @@ public class ManagerTest {
 	 		d.setNome("Super"); 
 	 		d.setCognome("Bianchi"); 
 	 		 
-	 		assertEquals("Super, Bianchi", d.bigliettoVisita()); 
+	 		assertEquals("Super,Bianchi", d.bigliettoVisita()); 
 	 		 
 	 		// metodi specifici della classe Dipendente 
 	 		d.setStipendio(10); 

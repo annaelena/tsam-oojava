@@ -3,56 +3,37 @@ package anitoiu.mariana.videoteca;
 public class Film {
 	
 	private String titolo;
-	private String nomeRegista;
-	private int annoProduzione;
-	private String nomeAttoriPrincipali;
-	private int preventivo;
-	
-	
-	public int getPreventivo() {
-		return preventivo;
-	}
-
-	public void setPreventivo(int preventivo) {
-		this.preventivo = preventivo;
-	}
-
-	
-
+	private String regista;
+	private int anno;
+	private String attoriPrincipali;
 	public String getTitolo() {
 		return titolo;
 	}
-
 	public void setTitolo(String titolo) {
 		this.titolo = titolo;
 	}
-
-	public String getNomeRegista() {
-		return nomeRegista;
+	public String getRegista() {
+		return regista;
 	}
-
-	public void setNomeRegista(String nomeRegista) {
-		this.nomeRegista = nomeRegista;
+	public void setRegista(String regista) {
+		this.regista = regista;
 	}
-
-	public int getAnnoProduzione() {
-		return annoProduzione;
+	public int getAnno() {
+		return anno;
 	}
-
-	public void setAnnoProduzione(int annoProduzione) {
-		this.annoProduzione = annoProduzione;
+	public void setAnno(int anno) {
+		this.anno = anno;
 	}
-
-	public String getNomeAttoriPrincipali() {
-		return nomeAttoriPrincipali;
+	public String getAttoriPrincipali() {
+		return attoriPrincipali;
 	}
-
-	public void setNomeAttoriPrincipali(String nomeAttoriPrincipali) {
-		this.nomeAttoriPrincipali = nomeAttoriPrincipali;
+	public void setAttoriPrincipali(String attoriPrincipali) {
+		this.attoriPrincipali = attoriPrincipali;
 	}
-	public int calcolaPreventivo(){
-		return preventivo;
-	}
+	
+	
+	
+	
 	
 
 }

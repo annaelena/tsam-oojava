@@ -7,9 +7,19 @@ public class LiberoProfessionista extends Cliente {
 	
 	public int calcoloParcella(){
 		
-		int tot = 0;
-		tot = Math.round(50 + (numeroFatture * 0.5f));
-		return tot;
+		
+		return Math.round(50 + (numeroFatture * 0.5f) * 1000);
+		
+	}
+	
+	public LiberoProfessionista(){
+		
+	}
+	
+	public LiberoProfessionista(String nome, String cognome, String cf, String piva, int numeroFatture) {
+		super(nome, cognome, cf);
+		this.piva = piva;
+		this.numeroFatture = numeroFatture;
 	}
 
 	public String getPiva() {

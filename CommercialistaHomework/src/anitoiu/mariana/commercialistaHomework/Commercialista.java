@@ -6,14 +6,18 @@ public class Commercialista {
 	
 	public int totaleIncasso(){
 		
-		int tot = 0;
-		for ( Cliente c: clienti ){
-			 
-			tot += c.calcolaParcella();
-		}
-		return tot;
+		int incasso= 0;
 		
-	}
+		for ( Cliente c: clienti ){
+			
+			if(c instanceof CalcoloParcella){
+				CalcoloParcella calc = (CalcoloParcella) c;
+				incasso += calc.calcolaParcella();
+			}
+		}
+		return incasso;
+		}
+	
 
 	public Cliente[] getClienti() {
 		return clienti;

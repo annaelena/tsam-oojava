@@ -3,7 +3,6 @@ package anitoiu.mariana.ereditarieta.test;
 import static org.junit.Assert.*;
 
 
-
 import org.junit.Test;
 
 import anitoiu.mariana.ereditarieta.*;
@@ -17,7 +16,7 @@ public class DipendenteTest {
 		d.setNome("Marco");
 		d.setCognome("Bianchi");
 		
-		assertEquals("Marco, Bianchi", d.bigliettoVisita());
+		assertEquals("Marco,Bianchi", d.bigliettoVisita());
 		
 		//metodi specifici della classe Dipendente
 		

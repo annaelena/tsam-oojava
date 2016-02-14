@@ -39,7 +39,7 @@ public class AziendaTest {
 		a.setSviluppatori(new Sviluppatore[]{s1, s2});
 		a.setStagisti(new Stagista[] {stag});
 		
-		assertEquals(17164, a.totaleStipendi());
+		assertEquals(17676, a.totaleStipendi());
 		
 		
 		

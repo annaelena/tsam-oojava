@@ -17,7 +17,7 @@ public class PersonaTest {
 		p.setCognome("Rossi");
 		
 		 		
-		assertEquals("Luca, Rossi", p.bigliettoVisita()); 
+		assertEquals("Luca,Rossi", p.bigliettoVisita()); 
 
 	}
 

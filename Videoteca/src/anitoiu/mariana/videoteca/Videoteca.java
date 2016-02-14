@@ -2,13 +2,15 @@ package anitoiu.mariana.videoteca;
 
 public class Videoteca {
 	
-	private Film[] films;
 	
-	public int calcoloTotalePreventivo(){
+	
+	static public int totalePreventivo(NoleggioFilm[] filmsnoleggiati){
 		
 		int tot = 0;
-		for (Film f: films){
-			tot += f.calcolaPreventivo();
+		for (NoleggioFilm nf: filmsnoleggiati){
+			int giorni = nf.getNumeroGiorni();
+			Supporto s = nf.getSupporto();
+			tot += s.costoNoleggio(giorni);
 		}
 		return tot;
 		

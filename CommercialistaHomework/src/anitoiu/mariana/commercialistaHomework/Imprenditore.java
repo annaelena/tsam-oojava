@@ -1,19 +1,31 @@
 package anitoiu.mariana.commercialistaHomework;
 
-public class Imprenditore extends Cliente{
+public class Imprenditore extends Cliente implements CalcoloParcella{
 	
 	private String piva;
 	private String ragioneSociale;
-	int numeroFatture;
+	private int numeroFatture;
 	
-	public int calcoloParcella() {
-		int tot = 0;
-		if (numeroFatture < 100) {
-			tot = 500;
+	public Imprenditore(){
+		
+	}
+	
+	public Imprenditore(String nome, String cognome, String cf,
+			String piva, String ragioneSociale, int numeroFatture ) {
+		super(nome, cognome, cf);
+		this.piva = piva;
+		this.ragioneSociale = ragioneSociale;
+		this.numeroFatture = numeroFatture;
+	}
+	@Override
+	public int calcolaParcella() {
+		
+		if (numeroFatture <= 100) {
+			return 500 * 1000;
 		}else {
-			tot = 500 +(numeroFatture * 1);
+			return (500 +numeroFatture * 1) * 1000;
 		}
-		return tot;
+	
 	}
 
 	public String getPiva() {
