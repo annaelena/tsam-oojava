@@ -6,5 +6,4 @@ public class Carburatore {
 	String caratteristiche() {
 		return "Carburatore dimensione:" + size;
 	}
-
 }

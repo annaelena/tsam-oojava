@@ -66,6 +66,8 @@ public class Test {
  		System.out.println(e.cilindrata + " cc"); 
  		System.out.println("carburatore: "  
  				+ x.motore.carburatore.size); 
+ 		
+ 	
  	} 
 } 
 
